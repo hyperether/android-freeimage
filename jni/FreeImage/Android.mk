@@ -51,7 +51,7 @@ LOCAL_NEON_SRC       := $(LOCAL_PATH)/Source/LibWebP/./src/dsp/dsp.dec_neon.$(NE
 $(SRCS) += $(LOCAL_NEON_SRC)
 LOCAL_SRC_FILES        := $(SRCS)
 LOCAL_ADDITIONAL_FLAGS := -O3 -fPIC -D__ANSI__ -DDISABLE_PERF_MEASUREMENT -DHAVE_MALLOC_H -DHAVE_PTHREAD -DWEBP_USE_THREAD
-LOCAL_CPPFLAGS         := $(LOCAL_ADDITIONAL_FLAGS) -std=c++11 -frtti -fexceptions -fopenmp -DPNG_ARM_NEON_OPT=0
+LOCAL_CPPFLAGS         := $(LOCAL_ADDITIONAL_FLAGS) -std=c++11 -frtti -fexceptions
 LOCAL_CFLAGS           := $(LOCAL_ADDITIONAL_FLAGS)
 LOCAL_CFLAGS += -fopenmp
 LOCAL_LDFLAGS += -fopenmp
