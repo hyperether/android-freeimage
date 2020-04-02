@@ -53,6 +53,7 @@ it under the terms of the one of two licenses as you choose:
 #endif
 
 #include "libraw_fuji_compressed.cpp"
+#include "swab.h"
 
 #ifdef __cplusplus
 extern "C"
